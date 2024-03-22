@@ -1,5 +1,1 @@
-from import java
-    function (x):
-        print(Hola mundo);
-        Print(xd)
-        return(asdas)
+uno dos tres cuatro cinco seis

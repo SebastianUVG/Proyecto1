@@ -12,46 +12,19 @@ import java.io.IOException;
 public class App 
 {
 
-    public static String[] textReader(String rutaArchivo) throws Exception {
-        List<String> ListaPalabras = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))){
-            String line ;
-            while ((line = br.readLine()) != null) {
-                String[] wordsInLine = line.split("\\s+"); // Dividir la línea en palabras usando espacios como delimitador
-                for (String word : wordsInLine) {
-                    ListaPalabras.add(word);
-                }
-            }
-        }
-        String[] PalabrasLista = new String[ListaPalabras.size()];
-        return ListaPalabras.toArray(PalabrasLista);
-    
-    }
 
-    public static void leerArchivo(String rutaArchivo) throws IOException {
-        try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
-            String linea;
-            while ((linea = br.readLine()) != null) {
-                System.out.println(linea);
-
-            }
-
-        }
-    }
-
-    public static void main( String[] args ) throws Exception
+    public static void main( String[] args ) throws Exception 
     {
         String rutaArchivo = "C:\\Users\\sebas\\OneDrive\\Escritorio\\Github\\EstructuraDeDatos\\Proyecto1\\proyecto1\\src\\main\\java\\uvg\\edu\\gt\\archivo.txt";
         try {
-            String[] palabras  = textReader(rutaArchivo);
-            System.out.println(palabras);
-            System.out.println("Palabras en el archivo: ");
-            for (String palabra : palabras){
-                System.out.println(palabra);
-            }
-            leerArchivo(rutaArchivo);
-        }catch (IOException e) {
+            LeerTexto lector = new LeerTexto(rutaArchivo);
+            
+            System.out.println("La expresion a evaluar es la siguiente: ");
+            lector.leerArchivo();
+            //System.out.println(lector.textReader().get(5));
+        } catch (IOException e) {
             System.err.println("Error al leer el archivo: " + e.getMessage());
         }
     }
 }
+
