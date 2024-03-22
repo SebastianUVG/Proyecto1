@@ -1,1 +1,5 @@
-Hola me llamo juan y quisiera ser el amigo de todos
+from import java
+    function (x):
+        print(Hola mundo);
+        Print(xd)
+        return(asdas)
