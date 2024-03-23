@@ -21,7 +21,12 @@ public class App
             
             System.out.println("La expresion a evaluar es la siguiente: ");
             lector.leerArchivo();
-            //System.out.println(lector.textReader().get(5));
+            System.out.println("Siguiente ");
+            System.out.println(lector.textReader());
+            System.out.println("siguiente");
+            System.out.println(lector.LeerCaracter());
+            System.out.println("Siguiente caracteres");
+            
         } catch (IOException e) {
             System.err.println("Error al leer el archivo: " + e.getMessage());
         }

@@ -5,6 +5,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class LeerTexto {
     private String rutaArchivo;
@@ -29,12 +31,6 @@ public class LeerTexto {
         return palabras;
     }
     
-    
-
-
-
-
-
 //* Función para leer el contenido que tiene el archivo tal cual como esta */
     public void leerArchivo() throws IOException {
         try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
@@ -44,4 +40,27 @@ public class LeerTexto {
             }
         }
     }
+
+
+    // Función para leer elemento por elemento de una cadena y meterlo en un ArrayList
+    // Función para leer elemento por elemento de una cadena y meterlo en un ArrayList, eliminando espacios en blanco
+    public ArrayList<Character> LeerCaracter() throws IOException {
+        ArrayList<Character> caracteres = new ArrayList<>();
+        
+        try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
+            int valor;
+            while ((valor = br.read()) != -1) {
+                char caracter = (char) valor;
+                if (!Character.isWhitespace(caracter)) { // Verificar si el carácter no es un espacio en blanco
+                    caracteres.add(caracter);
+                }
+            }
+        }
+        
+        return caracteres;
+    }
+
+
+
+
 }
