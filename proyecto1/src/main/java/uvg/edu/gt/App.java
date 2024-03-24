@@ -15,10 +15,8 @@ public class App
 
     public static void main( String[] args ) throws Exception 
     {
-        String rutaArchivo = "C:\\Users\\sebas\\OneDrive\\Escritorio\\Github\\EstructuraDeDatos\\Proyecto1\\proyecto1\\src\\main\\java\\uvg\\edu\\gt\\archivo.txt";
         try {
-            LeerTexto lector = new LeerTexto(rutaArchivo);
-            
+            LeerTexto lector = new LeerTexto();
             System.out.println("La expresion a evaluar es la siguiente: ");
             lector.leerArchivo();
             System.out.println("Siguiente ");
