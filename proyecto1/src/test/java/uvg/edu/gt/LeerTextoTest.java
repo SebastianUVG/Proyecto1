@@ -5,6 +5,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import org.junit.Test;
 
@@ -25,19 +26,14 @@ public class LeerTextoTest
     {
         LeerTexto lector = new LeerTexto();
         ArrayList<String> palabras = lector.textReader();
-        // Aquí puedes agregar aserciones para verificar que las palabras se leen correctamente
-        assertEquals(1, palabras.size()); // Por ejemplo, verifica el tamaño del ArrayList
-        assertTrue(palabras.contains("(5+2*5/(5+10))")); 
-    }
-
-
-    @Test
-    public void testLeerCaracter() throws IOException {
-        LeerTexto lector = new LeerTexto();
-        ArrayList<Character> caracteres = lector.LeerCaracter();
+        ArrayList<String> arregloEsperado = new ArrayList<>(Arrays.asList("Hola", "(", "10", "1", "8", "30", "*", "1", "2", "3", "4", "5", ")"));
         
-        // Aquí puedes agregar aserciones para verificar que los caracteres se leen correctamente
-        assertEquals(14, caracteres.size()); // Por ejemplo, verifica el tamaño del ArrayList
-        assertTrue(caracteres.contains('+')); // Verifica si un carácter específico está presente
+        // Aquí puedes agregar aserciones para verificar que las palabras se leen correctamente
+        assertEquals(13, palabras.size()); // Por ejemplo, verifica el tamaño del ArrayList
+        assertTrue(palabras.contains("Hola")); 
+        assertEquals(arregloEsperado,palabras);
     }
+
+
+   
 }

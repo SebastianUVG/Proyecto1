@@ -4,6 +4,8 @@
     import java.io.FileReader;
     import java.io.IOException;
     import java.util.ArrayList;
+    import java.util.regex.Matcher;
+    import java.util.regex.Pattern;
 
 
     public class LeerTexto {
@@ -12,20 +14,21 @@
        
         /* Función para leer el archivo y meter los datos en un array list palabra por palabra */
         public ArrayList<String> textReader() throws IOException {
-            ArrayList<String> palabras = new ArrayList<>();
-            try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
-                String linea;
-                while ((linea = br.readLine()) != null) {
-                    String[] palabrasEnLinea = linea.split("\\s+"); // Dividir la línea en palabras usando espacios como delimitador
-                    for (String palabra : palabrasEnLinea) {
-                        if (!palabra.isEmpty()) { // Si la palabra no está vacía (es decir, no es solo un espacio en blanco)
-                            palabras.add(palabra); // Agregar la palabra al ArrayList
-                        }
-                    }
+        ArrayList<String> palabras = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
+            String linea;
+            // Patrón de expresión regular para encontrar números o símbolos (+, -, *, /, (, ))
+            Pattern pattern = Pattern.compile("\\w+|\\d+(\\.\\d+)?|[-+*/()]");
+            
+            while ((linea = br.readLine()) != null) {
+                Matcher matcher = pattern.matcher(linea);
+                while (matcher.find()) {
+                    palabras.add(matcher.group()); // Agregar la coincidencia al ArrayList
                 }
             }
-            return palabras;
         }
+        return palabras;
+    }
         
     //* Función para leer el contenido que tiene el archivo tal cual como esta */
         public void leerArchivo() throws IOException {
@@ -39,23 +42,38 @@
 
 
         /*  Función para leer elemento por elemento de una cadena y meterlo en un ArrayList, eliminando espacios en blanco  */
-        public ArrayList<Character> LeerCaracter() throws IOException {
-            ArrayList<Character> caracteres = new ArrayList<>();
-            
+        /*
+        public ArrayList<String> LeerCaracter() throws IOException {
+            ArrayList<String> numeros = new ArrayList<>();
+    
             try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
-                int valor;
-                while ((valor = br.read()) != -1) {
-                    char caracter = (char) valor;
-                    if (!Character.isWhitespace(caracter)) { // Verificar si el carácter no es un espacio en blanco
-                        caracteres.add(caracter);
+                String linea;
+                while ((linea = br.readLine()) != null) {
+                    // Dividir la línea en palabras separadas por espacios en blanco
+                    String[] palabras = linea.split("\\s+");
+                    for (String palabra : palabras) {
+                        // Verificar si la palabra es un número
+                        if (esNumero(palabra)) {
+                            numeros.add(palabra);
+                        }
                     }
                 }
             }
-            
-            return caracteres;
+    
+            return numeros;
+        }
+    
+        // Método para verificar si una cadena es un número (entero o decimal)
+        private boolean esNumero(String cadena) {
+            try {
+                Double.parseDouble(cadena);
+                return true;
+            } catch (NumberFormatException e) {
+                return false;
+            }
         }
 
-
+        */
 
 
     }
