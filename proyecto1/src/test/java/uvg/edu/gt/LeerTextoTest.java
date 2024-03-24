@@ -26,10 +26,10 @@ public class LeerTextoTest
     {
         LeerTexto lector = new LeerTexto();
         ArrayList<String> palabras = lector.textReader();
-        ArrayList<String> arregloEsperado = new ArrayList<>(Arrays.asList("Hola", "(", "10", "1", "8", "30", "*", "1", "2", "3", "4", "5", ")"));
+        ArrayList<String> arregloEsperado = new ArrayList<>(Arrays.asList("Hola", "(", "10", "1.8", "30", "*", "1", "2", "3", "4", "5", ")"));
         
         // Aquí puedes agregar aserciones para verificar que las palabras se leen correctamente
-        assertEquals(13, palabras.size()); // Por ejemplo, verifica el tamaño del ArrayList
+        assertEquals(12, palabras.size()); // Por ejemplo, verifica el tamaño del ArrayList
         assertTrue(palabras.contains("Hola")); 
         assertEquals(arregloEsperado,palabras);
     }

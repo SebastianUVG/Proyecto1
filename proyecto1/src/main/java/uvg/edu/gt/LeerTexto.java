@@ -14,21 +14,22 @@
        
         /* Función para leer el archivo y meter los datos en un array list palabra por palabra */
         public ArrayList<String> textReader() throws IOException {
-        ArrayList<String> palabras = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
-            String linea;
-            // Patrón de expresión regular para encontrar números o símbolos (+, -, *, /, (, ))
-            Pattern pattern = Pattern.compile("\\w+|\\d+(\\.\\d+)?|[-+*/()]");
-            
-            while ((linea = br.readLine()) != null) {
-                Matcher matcher = pattern.matcher(linea);
-                while (matcher.find()) {
-                    palabras.add(matcher.group()); // Agregar la coincidencia al ArrayList
+            ArrayList<String> palabras = new ArrayList<>();
+            try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
+                String linea;
+                // Patrón de expresión regular para encontrar números (enteros y decimales), operadores matemáticos y palabras
+                Pattern pattern = Pattern.compile("\\b\\d+(\\.\\d+)?\\b|[+\\-*/()]|\\b\\w+\\b");
+    
+                while ((linea = br.readLine()) != null) {
+                    Matcher matcher = pattern.matcher(linea);
+                    while (matcher.find()) {
+                        palabras.add(matcher.group()); // Agregar la coincidencia al ArrayList
+                    }
                 }
             }
+            return palabras;
         }
-        return palabras;
-    }
+    
         
     //* Función para leer el contenido que tiene el archivo tal cual como esta */
         public void leerArchivo() throws IOException {

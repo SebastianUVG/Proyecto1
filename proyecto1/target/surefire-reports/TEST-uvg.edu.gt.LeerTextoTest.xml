@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\sebas\AppData\Local\Temp\surefire3173376570412979627\surefirebooter6508003712632812136.jar C:\Users\sebas\AppData\Local\Temp\surefire3173376570412979627 2024-03-24T14-44-45_773-jvmRun1 surefire3406774935653304886tmp surefire_013224561688177885597tmp"/>
+    <property name="sun.java.command" value="C:\Users\sebas\AppData\Local\Temp\surefire6308017488344632537\surefirebooter7941773755754943917.jar C:\Users\sebas\AppData\Local\Temp\surefire6308017488344632537 2024-03-24T14-51-39_807-jvmRun1 surefire7037010254087072218tmp surefire_016848137343376951717tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="c:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\test-classes;c:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\classes;C:\Users\sebas\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\sebas\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\sebas\AppData\Local\Temp\surefire3173376570412979627\surefirebooter6508003712632812136.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\sebas\AppData\Local\Temp\surefire6308017488344632537\surefirebooter7941773755754943917.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
