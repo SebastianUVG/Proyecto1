@@ -8,6 +8,9 @@
 
     public class LeerTexto {
         private String rutaArchivo = "C:\\Users\\sebas\\OneDrive\\Escritorio\\Github\\EstructuraDeDatos\\Proyecto1\\proyecto1\\src\\main\\java\\uvg\\edu\\gt\\archivo.txt";        
+       
+       
+        /* Función para leer el archivo y meter los datos en un array list palabra por palabra */
         public ArrayList<String> textReader() throws IOException {
             ArrayList<String> palabras = new ArrayList<>();
             try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
@@ -35,8 +38,7 @@
         }
 
 
-        // Función para leer elemento por elemento de una cadena y meterlo en un ArrayList
-        // Función para leer elemento por elemento de una cadena y meterlo en un ArrayList, eliminando espacios en blanco
+        /*  Función para leer elemento por elemento de una cadena y meterlo en un ArrayList, eliminando espacios en blanco  */
         public ArrayList<Character> LeerCaracter() throws IOException {
             ArrayList<Character> caracteres = new ArrayList<>();
             
