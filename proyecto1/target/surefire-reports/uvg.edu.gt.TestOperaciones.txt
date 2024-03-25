@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: uvg.edu.gt.TestOperaciones
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in uvg.edu.gt.TestOperaciones
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in uvg.edu.gt.TestOperaciones
