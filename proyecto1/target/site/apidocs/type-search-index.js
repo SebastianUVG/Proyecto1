@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"uvg.edu.gt","l":"App"},{"p":"uvg.edu.gt","l":"Funciones"},{"p":"uvg.edu.gt","l":"LeerTexto"},{"p":"uvg.edu.gt","l":"Operaciones"}];updateSearchResults();

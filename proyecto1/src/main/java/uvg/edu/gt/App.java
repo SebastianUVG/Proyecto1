@@ -1,33 +1,50 @@
 package uvg.edu.gt;
 
-
-import java.io.IOException;
 /**
- * Hello world!
+ * Aplicación principal de la calculadora de expresiones
+ * 
+ * @author sebas
  *
  */
-public class App 
-{
-
-
-    public static void main( String[] args ) throws Exception 
-    {
-        try {
-            LeerTexto lector = new LeerTexto();
-            Operaciones operaciones = new Operaciones();
-            System.out.println("La expresion a evaluar es la siguiente: ");
-            lector.leerArchivo();
-            System.out.println("Siguiente ");
-            System.out.println(lector.textReader());
-
-            System.out.println("Resultado de las operaciones:");
-            operaciones.Operar();
-            System.out.println(" ");
-            
-            
-        } catch (IOException e) {
-            System.err.println("Error al leer el archivo: " + e.getMessage());
-        }
-    }
+public class App {
+	
+	/**
+	 * Método principal de la aplicación
+	 * 
+	 * @param args
+	 *            argumentos pasados por la línea de comandos
+	 * @throws Exception
+	 *             en caso de errores al leer el archivo
+	 */
+	public static void main(String[] args) throws Exception {
+		
+		/* Creamos un objeto de la clase LeerTexto para leer el archivo */
+		LeerTexto lector = new LeerTexto();
+		
+		/* Creamos un objeto de la clase Operaciones para realizar las operaciones */
+		Operaciones operaciones = new Operaciones();
+		
+		/* Imprimimos un mensaje antes de leer el archivo */
+		System.out.println("La expresion a evaluar es la siguiente: ");
+		
+		/* Llamamos al método de la clase LeerTexto para leer el archivo */
+		lector.leerArchivo();
+		
+		/* Imprimimos un mensaje después de leer el archivo */
+		//System.out.println("Siguiente ");
+		
+		/* Llamamos al método de la clase LeerTexto para obtener el contenido del archivo como un ArrayList */
+		//System.out.println(lector.textReader());
+		
+		/* Imprimimos un mensaje antes de realizar las operaciones */
+		System.out.println("Resultado de las operaciones:");
+		
+		/* Llamamos al método de la clase Operaciones para realizar las operaciones */
+		operaciones.Operar();
+		
+		/* Imprimimos un mensaje después de realizar las operaciones */
+		System.out.println(" ");
+	}
 }
+
 

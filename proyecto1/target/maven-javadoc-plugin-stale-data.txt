@@ -1,0 +1,45 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'21'
+-sourcepath
+'C:/Users/sebas/OneDrive/Escritorio/Github/EstructuraDeDatos/Proyecto1/proyecto1/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/sebas/OneDrive/Escritorio/Github/EstructuraDeDatos/Proyecto1/proyecto1/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'proyecto1 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'proyecto1 1.0-SNAPSHOT API'
+uvg.edu.gt
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\src\main\java = 1711057733543
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\allclasses-index.html = 1711336220293
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\allpackages-index.html = 1711336220298
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\copy.svg = 1711336220344
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\element-list = 1711336220205
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\help-doc.html = 1711336220336
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\index-all.html = 1711336220324
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\index.html = 1711336220330
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\link.svg = 1711336220346
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\member-search-index.js = 1711336220310
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\module-search-index.js = 1711336220300
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\overview-tree.html = 1711336220273
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\package-search-index.js = 1711336220306
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\script.js = 1711336220342
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\search-page.js = 1711336220352
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\search.html = 1711336220328
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\search.js = 1711336220349
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\stylesheet.css = 1711336220340
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\tag-search-index.js = 1711336220311
+C:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\site\apidocs\type-search-index.js = 1711336220308
