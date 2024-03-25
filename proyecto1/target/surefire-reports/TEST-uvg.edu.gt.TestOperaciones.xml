@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\sebas\AppData\Local\Temp\surefire16332970542121734733\surefirebooter12390899160494834994.jar C:\Users\sebas\AppData\Local\Temp\surefire16332970542121734733 2024-03-24T19-52-29_242-jvmRun1 surefire9644766853269119432tmp surefire_02806547849250025156tmp"/>
+    <property name="sun.java.command" value="C:\Users\sebas\AppData\Local\Temp\surefire11681221297201763410\surefirebooter16517515582096458413.jar C:\Users\sebas\AppData\Local\Temp\surefire11681221297201763410 2024-03-24T20-32-25_922-jvmRun1 surefire17496446633252018581tmp surefire_012316487831326549748tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="c:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\test-classes;c:\Users\sebas\OneDrive\Escritorio\Github\EstructuraDeDatos\Proyecto1\proyecto1\target\classes;C:\Users\sebas\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\sebas\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\sebas\AppData\Local\Temp\surefire16332970542121734733\surefirebooter12390899160494834994.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\sebas\AppData\Local\Temp\surefire11681221297201763410\surefirebooter16517515582096458413.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
@@ -58,5 +58,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testCalcularResultado" classname="uvg.edu.gt.TestOperaciones" time="0.001"/>
+  <testcase name="testCalcularResultado" classname="uvg.edu.gt.TestOperaciones" time="0"/>
 </testsuite>
