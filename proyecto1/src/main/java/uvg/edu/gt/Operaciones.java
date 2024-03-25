@@ -8,7 +8,7 @@ public class Operaciones {
     LeerTexto expresiones = new LeerTexto(); 
     ArrayList<String> expresion;
     
-    public void Operar() throws IOException {
+    public double Operar() throws IOException {
         expresion = expresiones.textReader();
       
         // Recorremos los elementos y guardamos los elementos de los stacks en listas dinámicas
@@ -47,6 +47,7 @@ public class Operaciones {
             resultadoFinal += calcularResultado(stack);
         }
         System.out.println("El resultado de la expresión es: " + resultadoFinal);
+        return resultadoFinal;
     }
     
     
