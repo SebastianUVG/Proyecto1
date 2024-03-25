@@ -26,7 +26,7 @@ public class Operaciones {
                 }
                 if (!currentStack.isEmpty()) {
                     double resultado = calcularResultado(currentStack); // Calcular el resultado del stack
-                    System.out.println("Resultado del stack interno: " + resultado);
+                    System.out.println("Resultado: " + resultado);
                     // Agregar el resultado al stack anterior si es posible
                     if (!stacks.isEmpty()) {
                         Stack<String> stackAnterior = stacks.get(stacks.size() - 1);
@@ -83,8 +83,9 @@ public class Operaciones {
             case '+':
             case '-':
             case '*':
-            case '/':
                 return 2; // Operadores binarios
+            case '/':
+                return 2; // Operador de división
             default:
                 throw new IllegalArgumentException("Operador no válido: " + operador);
         }
@@ -116,10 +117,6 @@ public class Operaciones {
         return resultado;
     }
     
-    
-    
-    
-
     public boolean esOperando(String elemento) {
         try {
             Double.parseDouble(elemento);
@@ -132,6 +129,4 @@ public class Operaciones {
     public boolean esOperador(String elemento) {
         return elemento.equals("+") || elemento.equals("-") || elemento.equals("*") || elemento.equals("/");
     }
-
- 
 }
